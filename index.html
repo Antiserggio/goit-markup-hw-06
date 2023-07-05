@@ -50,7 +50,8 @@
       </button>
     </div>
     <div class="mob-menu js-menu-container">
-      <button type="button" class="close-btn-mob js-close-menu">x
+      <button type="button" class="close-btn-mob js-close-menu">
+        x
         <!-- <svg class="mob-menu-close-btn" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg> -->
@@ -104,7 +105,6 @@
         </ul>
       </div>
     </div>
-
   </header>
   <main>
     <section class="hero section">
@@ -175,14 +175,23 @@
         <h2 class="product-title">What are we doing</h2>
         <ul class="product-list list">
           <li class="product-item">
-            <img src="./images/work-examples/monitor.jpg" width="360" height="300" alt="graphs on the monitor" />
+            <img srcset="
+                  ./images/work-examples/monitor.jpg    1x,
+                  ./images/work-examples/monitor-2x.jpg 2x
+                " src="./images/work-examples/monitor.jpg" width="360" height="300" alt="graphs on the monitor" />
           </li>
           <li class="product-item">
-            <img src="./images/work-examples/smartphone.jpg" width="360" height="300"
+            <img srcset="
+                  ./images/work-examples/smartphone.jpg    1x,
+                  ./images/work-examples/smartphone-2x.jpg 2x
+                " src="./images/work-examples/smartphone.jpg" width="360" height="300"
               alt="notifications in a smartphone" />
           </li>
           <li class="product-item">
-            <img src="./images/work-examples/smartphone-in-hand.jpg" width="360" height="300"
+            <img srcset="
+                  ./images/work-examples/smartphone-in-hand.jpg    1x,
+                  ./images/work-examples/smartphone-in-hand-2x.jpg 2x
+                " src="./images/work-examples/smartphone-in-hand.jpg" width="360" height="300"
               alt="application in a smartphone" />
           </li>
         </ul>
@@ -395,8 +404,8 @@
   </main>
 
   <footer class="footer">
-    <div class=" footer-container container">
-      <div class="footer-logo-container ">
+    <div class="footer-container container">
+      <div class="footer-logo-container">
         <a class="footer-logo link" href="./index.html">Web<span class="logo">Studio</span></a>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
@@ -437,8 +446,9 @@
         <p class="footer-bottom-text">Subscribe</p>
         <form class="footer-form">
           <label for="footer-email" class="footer-label" aria-label="footer email"><input type="email"
-              name="footer-email" id="footer-email" placeholder="E-mail" class="footer-input"></label>
-          <button type="submit" class="footer-btn">Subscribe
+              name="footer-email" id="footer-email" placeholder="E-mail" class="footer-input" /></label>
+          <button type="submit" class="footer-btn">
+            Subscribe
             <svg class="footer-btn-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-telegram"></use>
             </svg>
@@ -488,13 +498,15 @@
           <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
         </div>
         <div class="modal-field-checkbox">
-          <input type="checkbox" name="user-privacy" id="user-privacy" class="input-check visually-hidden" value="true">
+          <input type="checkbox" name="user-privacy" id="user-privacy" class="input-check visually-hidden"
+            value="true" />
           <label for="user-privacy" class="check-text"><span class="check-span">
               <svg class="check-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-check-click"></use>
               </svg>
-            </span> I accept the terms and conditions of the <a href="" class="check-text-link">
-              Privacy Policy</a></label>
+            </span>
+            I accept the terms and conditions of the
+            <a href="" class="check-text-link"> Privacy Policy</a></label>
         </div>
         <button type="submit" class="modal-btn-send">Send</button>
       </form>
